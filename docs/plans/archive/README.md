@@ -1,0 +1,1 @@
+- Archived plan documents from `docs/plans/` are stored here.
