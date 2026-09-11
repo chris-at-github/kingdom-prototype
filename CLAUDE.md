@@ -7,6 +7,7 @@
 - Weise mich auf Fehler in meinen Anforderungen hin.
 - Weise mich auf Verbesserungen hin.
 - Erkläre bei neuen Konzepten, Bibliotheken oder Patterns kurz das Warum und die Alternative, die du verworfen hast.
+- Halte wiederkehrende Befehle und Erkenntnisse als Kurzanleitung in `docs/guides/` fest (Aufbau siehe `docs/guides/README.md`).
 
 ## Stack
 - Sprache/Runtime: TBD
@@ -24,7 +25,9 @@
 - Lint: TBD
 
 ## Struktur
-- TBD — wird ergänzt, sobald die ersten Verzeichnisse entstehen.
+- `docs/guides/` — Kurzanleitungen auf Deutsch, Index in `docs/guides/README.md`.
+- `docs/plans/` — Spezifikationsdokumente auf Englisch, abgeschlossene unter `docs/plans/archive/`.
+- Code-Verzeichnisse: TBD — wird ergänzt, sobald sie entstehen.
 
 ## Anforderungsanalyse
 
