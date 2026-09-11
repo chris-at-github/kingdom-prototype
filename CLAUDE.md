@@ -10,24 +10,32 @@
 - Halte wiederkehrende Befehle und Erkenntnisse als Kurzanleitung in `docs/guides/` fest (Aufbau siehe `docs/guides/README.md`).
 
 ## Stack
-- Sprache/Runtime: TBD
-- Framework(s): TBD
+- Sprache/Runtime: TypeScript auf Node.js 24 — ausschließlich im DDEV-Container, kein Host-Node.
+- Framework: React 19, gebaut mit Vite 8.
+- Umgebung: DDEV (`type: generic`, `webserver_type: generic`, ohne PHP und ohne DB-Container).
 - Datenbank: TBD
 - Testing: TBD (wird erst im späteren Projektverlauf ergänzt)
-- Linting/Formatting: TBD (wird erst im späteren Projektverlauf ergänzt)
-- Code-Sprache (Bezeichner, Kommentare): TBD
+- Linting/Formatting: oxlint aus dem Vite-Template, bewusst nicht weiter eingerichtet.
+- Code-Sprache (Bezeichner, Kommentare): Englisch.
 
 ## Befehle
-- Install: TBD
-- Dev-Server: TBD
-- Build: TBD
+Alle Befehle laufen im Container. `ddev exec` nutzt das konfigurierte `working_dir`
+(`frontend/`), `ddev npm` dagegen das aktuelle Host-Verzeichnis — Details in
+`docs/guides/ddev.md`.
+
+- Umgebung starten: `ddev start`
+- Install: `ddev exec npm install`
+- Dev-Server: `ddev exec npm run dev` → <https://kingdom-prototype.ddev.site:5173>
+- Build: `ddev exec npm run build` (Ausgabe in `frontend/dist/`)
+- Lint: `ddev exec npm run lint` (oxlint, noch nicht Teil des Arbeitsablaufs)
 - Test: TBD
-- Lint: TBD
 
 ## Struktur
 - `docs/guides/` — Kurzanleitungen auf Deutsch, Index in `docs/guides/README.md`.
 - `docs/plans/` — Spezifikationsdokumente auf Englisch, abgeschlossene unter `docs/plans/archive/`.
-- Code-Verzeichnisse: TBD — wird ergänzt, sobald sie entstehen.
+- `frontend/` — React-Anwendung (Vite, TypeScript).
+- `.ddev/` — Container-Konfiguration der Entwicklungsumgebung.
+- Backend-Verzeichnisse: TBD — wird ergänzt, sobald sie entstehen.
 
 ## Anforderungsanalyse
 
