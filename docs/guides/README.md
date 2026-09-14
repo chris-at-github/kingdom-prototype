@@ -9,6 +9,7 @@ bewusst kurz gehalten und zum Nachschlagen gedacht, nicht zum Durchlesen.
 | --- | --- | --- |
 | Git | [git.md](git.md) | Squash-Merge, Commit-Typen |
 | DDEV | [ddev.md](ddev.md) | Umgebung starten, Befehle im Container, Vite-Dev-Server, Build |
+| shadcn/ui | [shadcn.md](shadcn.md) | Komponenten hinzufügen, eigenes Theme, Pfad-Alias, MCP-Server |
 
 ## Aufbau
 

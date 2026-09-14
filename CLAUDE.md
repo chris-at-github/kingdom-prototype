@@ -12,6 +12,9 @@
 ## Stack
 - Sprache/Runtime: TypeScript auf Node.js 24 — ausschließlich im DDEV-Container, kein Host-Node.
 - Framework: React 19, gebaut mit Vite 8.
+- UI: shadcn/ui auf Base UI, Styling mit Tailwind CSS 4. Komponenten liegen als
+  Quellcode in `frontend/src/components/ui/`, das Theme als CSS-Variablen in
+  `frontend/src/index.css` (siehe `docs/guides/shadcn.md`).
 - Umgebung: DDEV (`type: generic`, `webserver_type: generic`, ohne PHP und ohne DB-Container).
 - Datenbank: TBD
 - Testing: TBD (wird erst im späteren Projektverlauf ergänzt)

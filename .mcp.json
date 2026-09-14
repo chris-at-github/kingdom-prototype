@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "docker",
+      "args": [
+        "exec",
+        "-i",
+        "-w",
+        "/var/www/html/frontend",
+        "ddev-kingdom-prototype-web",
+        "npx",
+        "--no",
+        "shadcn",
+        "mcp"
+      ]
+    }
+  }
+}
